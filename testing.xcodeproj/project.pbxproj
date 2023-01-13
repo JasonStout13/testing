@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		671C57E62971B7EC00BD6704 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C57E52971B7EC00BD6704 /* AuthView.swift */; };
+		671C57E82971B8F600BD6704 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C57E72971B8F600BD6704 /* HomeView.swift */; };
+		671C57EA2971BAAB00BD6704 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C57E92971BAAB00BD6704 /* Post.swift */; };
+		671C57EC2971BB5F00BD6704 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671C57EB2971BB5F00BD6704 /* GoogleService-Info.plist */; };
+		673F139F2970FD2C005C5693 /* FBService in Frameworks */ = {isa = PBXBuildFile; productRef = 673F139E2970FD2C005C5693 /* FBService */; };
 		6745E6FC2970889D00419B6E /* testingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745E6FB2970889D00419B6E /* testingApp.swift */; };
 		6745E6FE2970889D00419B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745E6FD2970889D00419B6E /* ContentView.swift */; };
 		6745E7002970889E00419B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6745E6FF2970889E00419B6E /* Assets.xcassets */; };
@@ -14,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		671C57E52971B7EC00BD6704 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		671C57E72971B8F600BD6704 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		671C57E92971BAAB00BD6704 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		671C57EB2971BB5F00BD6704 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6745E6F82970889D00419B6E /* testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6745E6FB2970889D00419B6E /* testingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingApp.swift; sourceTree = "<group>"; };
 		6745E6FD2970889D00419B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673F139F2970FD2C005C5693 /* FBService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				6745E6FB2970889D00419B6E /* testingApp.swift */,
+				671C57E52971B7EC00BD6704 /* AuthView.swift */,
 				6745E6FD2970889D00419B6E /* ContentView.swift */,
+				671C57E72971B8F600BD6704 /* HomeView.swift */,
+				671C57E92971BAAB00BD6704 /* Post.swift */,
+				671C57EB2971BB5F00BD6704 /* GoogleService-Info.plist */,
 				6745E6FF2970889E00419B6E /* Assets.xcassets */,
 				6745E7012970889E00419B6E /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = testing;
+			packageProductDependencies = (
+				673F139E2970FD2C005C5693 /* FBService */,
+			);
 			productName = testing;
 			productReference = 6745E6F82970889D00419B6E /* testing.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 6745E6EF2970889D00419B6E;
+			packageReferences = (
+				673F139D2970FD2C005C5693 /* XCRemoteSwiftPackageReference "FBService" */,
+			);
 			productRefGroup = 6745E6F92970889D00419B6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6745E7032970889E00419B6E /* Preview Assets.xcassets in Resources */,
+				671C57EC2971BB5F00BD6704 /* GoogleService-Info.plist in Resources */,
 				6745E7002970889E00419B6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6745E6FE2970889D00419B6E /* ContentView.swift in Sources */,
+				671C57E82971B8F600BD6704 /* HomeView.swift in Sources */,
 				6745E6FC2970889D00419B6E /* testingApp.swift in Sources */,
+				671C57E62971B7EC00BD6704 /* AuthView.swift in Sources */,
+				671C57EA2971BAAB00BD6704 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		673F139D2970FD2C005C5693 /* XCRemoteSwiftPackageReference "FBService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JasonStout13/FBService.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		673F139E2970FD2C005C5693 /* FBService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 673F139D2970FD2C005C5693 /* XCRemoteSwiftPackageReference "FBService" */;
+			productName = FBService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6745E6F02970889D00419B6E /* Project object */;
 }
